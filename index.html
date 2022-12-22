@@ -21,6 +21,7 @@
     }
     div{color:hsl(228, 12%, 48%)}
     .box{
+      word-wrap: break-word;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -35,6 +36,8 @@
       background-color: hsl(0, 0%, 100%);
       grid-template-areas: "lf rg";
       padding:0%;
+      align-content: center;
+      justify-content: center;
     }
     p{
       font-family: 'Montserrat', sans-serif;
@@ -71,9 +74,11 @@
     }
     .after{
       padding: 5%;
-
-      font-size:25px;
-      font-weight: bold;
+      font-size: 2em;
+      font-size: 1.5em;;
+      font-weight:700;
+      /* font-size:25px; */
+      /* font-weight: bold; */
       color:hsl(158, 36%, 37%);
       font-family:"Fraunces";
     }
@@ -108,8 +113,8 @@
         margin: auto;
         border-radius: 3%;
         display:grid;
-        grid-template-columns: auto;
-        grid-template-rows: 35% 55%;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
         background-color: hsl(0, 0%, 100%);
         grid-template-areas: "lf "
                              "rg";
@@ -117,19 +122,25 @@
     }  
 
     .left{  
-      /* grid-area: lf; */
       background-image: url("images/image-product-mobile.jpg" );
-      /* background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover; */
       border-radius: 3% 3% 0% 0% ;
     }
-    .ri{padding:5%;}
-    h1{margin-block-start: 0px; font-size: 1.8em;;font-weight:700;}
+    .ri{
+      padding:6.5%;
+    }
+    h1{
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+       font-size: 1.8em;;font-weight:700;
+      }
     .before{
       font-size:14px;
     }
-
+    .head{font-size:12px;}
+    p{
+      line-height: 1.8;
+      /* word-spacing: 1px; */
+    }
   }
   </style>
 </head>
@@ -137,19 +148,21 @@
   <div class="box"> 
     <div class="left"> </div>
     <div class="ri">
-        <span  class="head";>Preview</span>
-    <h1>Gabrielle Essence Eau De Parfum</h1>
+      <span  class="head";>Perfume</span>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
 
-    <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-    Perfumer-Creator for the House of CHANEL.</p>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.</p>
 
-    <span class="after">$149.99</span><span class="before">$169.99</span>
-    <br>
-    <button>
-      <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/>
-      </svg>
-      <span class="add">Add to Cart</span></button> </div>
+      <span class="after">$149.99</span><span class="before">$169.99</span>
+      <br>
+      <button>
+        <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/>
+        </svg>
+        <span class="add">Add to Cart</span>
+      </button> 
+    </div>
 
   </div>
 
