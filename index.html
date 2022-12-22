@@ -21,6 +21,8 @@
     }
     div{color:hsl(228, 12%, 48%)}
     .box{
+        
+
       position: absolute;
       top: 50%;
       left: 50%;
@@ -35,8 +37,8 @@
       background-color: hsl(0, 0%, 100%);
       grid-template-areas: "lf rg";
       padding:0%;
-      align-content: center;
-      justify-content: center;
+      /* align-content: center;
+      align-items: center; */
       word-wrap: break-word;
     }
     p{
@@ -48,20 +50,21 @@
       font-family:"Fraunces";
       color:hsl(212, 21%, 14%);
       font-size:2rem;
+      margin:0%;
     }
     .left{
       grid-area: lf; 
-      background-image: url("images/image-product-desktop.jpg" );
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-size: 100% 100%;
-      /* background-size: contain; */
       border-radius: 3% 0% 0% 3% ;
     }
+    img{border-radius: 3% 0% 0% 3% ;}
     .ri{
-      padding: 10%;
+      display:grid;
+      padding: 5%;
       grid-area: rg;
+      align-items: center;
+      align-content: space-around;
+      justify-content: space-evenly;
+
     }
     .before{
       padding: 5%;
@@ -113,8 +116,9 @@
                              "rg";
         padding:0%;
       }  
+      img{border-radius: 3% 3% 0% 0%  ;}
     .left{  
-      background-image: url("images/image-product-mobile.jpg" );
+      /* background-image: url("images/image-product-mobile.jpg" ); */
       border-radius: 3% 3% 0% 0% ;
     }
     .ri{
@@ -145,6 +149,10 @@
     <div class="box"> 
       <div class="left">
         <!-- div for background image -->
+        <picture>
+            <source media="(min-width:557px)" srcset="images/image-product-desktop.jpg" width="100%" height="100%">
+            <img src="images/image-product-mobile.jpg" width="100%" height="100%">
+        </picture>
       </div>
       <div class="ri">
         <span  class="head1">Perfume</span>
@@ -154,7 +162,7 @@
         Perfumer-Creator for the House of CHANEL.</p>
 
         <p><span class="after">$149.99</span><span class="before">$169.99</span></p>
-        <br>
+        <!-- <br> -->
         <button>
           <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg" >
             <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/>
