@@ -21,34 +21,42 @@
     }
     div{color:hsl(228, 12%, 48%)}
     .box{
-      word-wrap: break-word;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width:40%;
+      width:42%;
+      height: minmax(56%,max-content);
       margin: auto;
       border-radius: 3%;
       display:grid;
       grid-template-columns: 50% 50%;
+      grid-template-rows: 100%;
       background-color: hsl(0, 0%, 100%);
       grid-template-areas: "lf rg";
       padding:0%;
       align-content: center;
       justify-content: center;
+      word-wrap: break-word;
     }
     p{
       font-family: 'Montserrat', sans-serif;
       color:hsl(228, 12%, 48%);
       font-size:14px;
     }
-    h1{font-family:"Fraunces";color:hsl(212, 21%, 14%);}
+    h1{
+      font-family:"Fraunces";
+      color:hsl(212, 21%, 14%);
+      font-size:2rem;
+    }
     .left{
       grid-area: lf; 
       background-image: url("images/image-product-desktop.jpg" );
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
+      background-size: 100% 100%;
+      /* background-size: contain; */
       border-radius: 3% 0% 0% 3% ;
   }
 
@@ -64,7 +72,7 @@
     }
     .after{
       padding: 5%;
-      font-size: 1.5em;;
+      font-size: 1.5rem;;
       font-weight:700;
       color:hsl(158, 36%, 37%);
       font-family:"Fraunces";
