@@ -30,8 +30,6 @@
       margin: auto;
       border-radius: 3%;
       display:grid;
-      /* grid-auto-rows: minmax(min-content, auto); */
-      /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
       grid-template-columns: 50% 50%;
       background-color: hsl(0, 0%, 100%);
       grid-template-areas: "lf rg";
@@ -46,24 +44,16 @@
     }
     h1{font-family:"Fraunces";color:hsl(212, 21%, 14%);}
     .left{
-      /* border:red solid; */
-      /* width:45%; */
-      /* grid-area: lf; */
+      grid-area: lf; 
       background-image: url("images/image-product-desktop.jpg" );
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
-      /* background-size: contain, cover;
-      background-size: contain; */
-      background-size: cover;
       border-radius: 3% 0% 0% 3% ;
-    /*background-size: 50%;*/
   }
 
     .ri{
       padding: 10%;
-      /* border:red solid; */
-      /* width:95%; */
       grid-area: rg;
 
     }
@@ -74,11 +64,8 @@
     }
     .after{
       padding: 5%;
-      font-size: 2em;
       font-size: 1.5em;;
       font-weight:700;
-      /* font-size:25px; */
-      /* font-weight: bold; */
       color:hsl(158, 36%, 37%);
       font-family:"Fraunces";
     }
@@ -95,13 +82,12 @@
     }
     .head{
       text-transform: uppercase;
-       font-size:small;
-       letter-spacing: 3px;
+      letter-spacing: 3px;
       font-family: 'Montserrat', sans-serif;
       font-size:14px;
     }
     .add{padding:5%}
-
+    svg{vertical-align: middle;}
     @media only screen and (max-device-width: 557px) {
       .box{
         position: absolute;
@@ -120,7 +106,6 @@
                              "rg";
         padding:0%;
     }  
-
     .left{  
       background-image: url("images/image-product-mobile.jpg" );
       border-radius: 3% 3% 0% 0% ;
@@ -131,15 +116,17 @@
     h1{
       margin-block-start: 0px;
       margin-block-end: 0px;
-       font-size: 1.8em;;font-weight:700;
+      font-size: 1.8em;
+      font-weight:700;
       }
     .before{
       font-size:14px;
     }
-    .head{font-size:12px;}
+    .head{
+      font-size:12px;
+    }
     p{
       line-height: 1.8;
-      /* word-spacing: 1px; */
     }
   }
   </style>
@@ -157,7 +144,7 @@
       <span class="after">$149.99</span><span class="before">$169.99</span>
       <br>
       <button>
-        <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+        <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg" >
           <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/>
         </svg>
         <span class="add">Add to Cart</span>
